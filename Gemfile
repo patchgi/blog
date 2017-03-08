@@ -13,13 +13,13 @@ gem 'sinatra-activerecord'
 
 gem 'bcrypt'
 
-#group :development do
- #   gem 'sqlite3'
-#end
+group :development do
+    gem 'sqlite3'
+end
 
-#group :production do
-gem 'pg'
-#end
+group :production do
+    gem 'pg'
+end
 
 group :test do
 	gem 'rspec'
