@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <img src="<%= @user.image_url%>" width="300px">
+    <p><%= @user.username%></p>
+    <form action="/edit_profile/<%= @user.id%>" method="post">
+      <input type="submit" value="プロフィール編集">
+    </form>
+    <a href="/post_article">投稿</a>
+    <ul>
+      <% @articles.each do |a|%>
+        <li>
+          <h3><a href="<%= a.article_url%>"><%= a.title%></a></h3>
+          <form action="/delete/<%= a.id%>" method="post">
+            <input type="submit" value="delete">
+          </form>
+          <form action="/edit/<%= a.id%>" method="post">
+            <input type="submit" value="edit">
+          </form>
+        </li>
+      <%end%>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <script src="/js/marked.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+  <script src="/js/editor.js"></script>
+  <script src="/js/renew.js"></script>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/css/github.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">
+  <link rel="stylesheet" href="/css/editor.css" />
+</head>
+
+<body>
+  <a href="../dashboard" id="upload">変更</a>
+  <p style="display:none" id="id"><%= @article.id%></p>
+  <input id="title" value="<%= @article.title%>">
+  <div class="flex" value="hoge">
+    <div class=" flexItem3 input-area">
+      <textarea id="editor" class="form-control" id="body"><%= @article.body%></textarea>
+    </div>
+    <div class="flexItem4">
+      <div id="result" class="output-area"></div>
+    </div>
+  </div>
+
+</body>
+</html>

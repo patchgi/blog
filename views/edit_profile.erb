@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form action="/update_profile/<%= @user.id%>" method="post" enctype = "multipart/form-data">
+      <ul>
+      <li><input type="email" name="email"></li>
+      <li><input name="screen_name"></li>
+      <li><input type="file" name="image"></li>
+      <input type="submit" value="変更">
+    </ul>
+    </form>
+  </body>
+</html>

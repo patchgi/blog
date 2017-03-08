@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <% unless session[:user]%>
+    <a href="/signup">新規登録</a>
+    <a href="/signin">ログイン</a>
+    <%else%>
+    <a href="/dashboard">ダッシュボード</a>
+    <a href="/signout">ログアウト</a>
+    <% end%>
+    <ul>
+    <% @articles.each do |a|%>
+      <li>
+        <h3><a href="<%= a.article_url%>"><%= a.title%></a></h3>
+      </li>
+    <%end%>
+  </ul>
+  </body>
+</html>
