@@ -1,5 +1,5 @@
-current directory: /Users/patchgi/workspace/sintraTutrial/vender/bundle/ruby/2.2.0/gems/pg-0.19.0/ext
-/usr/local/var/rbenv/versions/2.2.3/bin/ruby -r ./siteconf20170308-4518-kjfec5.rb extconf.rb
+current directory: /Users/patchgi/workspace/blog/vender/bundle/ruby/2.2.0/gems/pg-0.19.0/ext
+/usr/local/var/rbenv/versions/2.2.3/bin/ruby -r ./siteconf20170308-88218-1o4z7t9.rb extconf.rb
 checking for pg_config... no
 No pg_config... trying anyway. If building fails, please try again with
  --with-pg-config=/path/to/pg_config
@@ -39,6 +39,6 @@ Provided configuration options:
 
 To see why this extension failed to compile, please check the mkmf.log which can be found here:
 
-  /Users/patchgi/workspace/sintraTutrial/vender/bundle/ruby/2.2.0/extensions/x86_64-darwin-14/2.2.0-static/pg-0.19.0/mkmf.log
+  /Users/patchgi/workspace/blog/vender/bundle/ruby/2.2.0/extensions/x86_64-darwin-14/2.2.0-static/pg-0.19.0/mkmf.log
 
 extconf failed, exit code 1
